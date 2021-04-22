@@ -1,0 +1,16 @@
+SYMFONY
+
+*   Cest un FRAMEWORK PHP (cadriciel), une boîtte à outils logicielle. CRUD (Create / Read / Update / Delete )
+-> SYMFONY va nous permettre de faciliter le développement d'applis en PHP.
+    * logiciel libre créé par Fabien Potencier
+    * Version 5.2 
+    * Ensemble de composants ( components ) dont le coeur s'appelle le Kernel en anglais (noyau). On peut installer uniquement le Kernel mais sont fonctionnemenyt sera limité. Il faudra installer d'autres composants.
+
+    Les composants
+    - doctrine : gère la BDD / ORM (  Object Relation Manager ) -> dans l'appli symfony on ne connaît que l'ORM
+    - twig : va servir à faire des templates (gabarit ) html
+    -  monolog : outil pour gérer les journaux de logiciels (historique, journaux d'utilisation )
+    - API : sert à créer une architecture pour que le dev front puisse accéder à ses données
+
+    Ces composants sont installés avec un outils PHP -> Composer
+    composer require doctrine
