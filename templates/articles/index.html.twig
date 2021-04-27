@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+{% block title %}Formation Symfony - baroude{% endblock %}
+
+        {% block body %}
+        <h1 class="text-center pb-3">Listes des articles</h1>
+        <div class="bd-example container">
+                <table class="table table-stripped">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Auteur</th>
+                            <th scope="col">Titre</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Date de publication</th>
+                            <th scope="col">Voir</th>
+                            <th scope="col">Editer</th>
+                
+                            <!-- ctrl + maj + l => select toutes les balises du même nom -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {%  for p in posts %}
+                        <tr>
+                            <td>{{ p.id }}</td>
+                            <td>{{ p.auteur }}</td>
+                            <td>{{ p.titre }}</td>
+                            <td>{{ p.description }}</td>
+                            <td>{{ p.date_de_publication }}</td>
+                            <td><a href="#" class="far fa-eye text-decoration-none"></a></td>
+                            <td><a href="#" class="fas fa-pencil-alt text-success text-decoration-none"></a></td>
+                
+                        </tr>
+                        {% endfor %}
+
+                    </tbody>
+                </table>
+
+        </div>
+        
+        {% endblock %}

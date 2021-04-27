@@ -92,3 +92,7 @@ symfony installation
             - /articles/1/delete : supprimer l'article 1
 
 
+2/ utiliser un commentaire miltiligne pour donner une @Route
+3/debug avec php bin/console debug:router 
+4/voir ArticlesController.php
+
