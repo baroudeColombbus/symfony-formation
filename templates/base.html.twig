@@ -28,15 +28,17 @@
 {# style du site #}
 <style>
                 body {  
+                    background-color: aliceblue;
                     font-family: 'Poppins', sans-serif;
                 }
 </style>
 
     </head>
     <body>
-        {% block body %}
-
-        {% endblock %}
+        {{  include('inc/navbar.html.twig' )    }}
+        <div class="container">
+        {% block body %}{% endblock %}
+        </div>
         <!-- include page commercials.html.twig -->
         {%  include 'commercials.html.twig' %}
 
